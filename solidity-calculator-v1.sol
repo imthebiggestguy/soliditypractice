@@ -1,7 +1,7 @@
 pragma solidity >=0.5.0 <0.6.0;
 
-contract Calculator{
-uint c;
+contract Calculator {
+uint c = 1;
 
   function add(uint a, uint b) public {
     c = a + b;
