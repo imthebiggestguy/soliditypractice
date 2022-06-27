@@ -1,7 +1,7 @@
 pragma solidity >=0.6.0 <0.9.0;
 
 contract Calculator {
-  uint s_calculated = 1;
+  uint s_calculated;
 
 //add
   function add(uint _valueA, uint _valueB) public {
