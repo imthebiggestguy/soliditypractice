@@ -1,30 +1,35 @@
-//Very early draft in the works
-pragma solidity >=0.5.0 <0.6.0;
+pragma solidity >=0.6.0 <0.9.0;
 
 contract Calculator {
-uint c = 1;
+  uint s_calculated = 1;
 
-  function add(uint a, uint b) public {
-    c = a + b;
+//add
+  function add(uint _valueA, uint _valueB) public {
+    s_calculated = l_valueA + l_valueB;
   }
 
-  function subtract(uint a, uint b) public {
-    c = a - b;
+//subtract
+  function subtract(uint _valueA, uint _valueB) public {
+    s_calculated = _valueA - _valueB;
   }
 
-  function multiply(uint a, uint b) public {
-    c = a * b;
+//multiply
+  function multiply(uint l_valueA, uint l_valueB) public {
+    s_calculated = _valueA * _valueB;
   }
 
-  function divide(uint a, uint b) public {
-    c = a / b;
+//divide
+  function divide(uint l_valueA, uint l_valueB) public {
+    s_calculated = _valueA / _valueB;
   }
 
-  function exp(uint a, uint b) public {
-    c = a ** b;
+//exponent
+  function exp(uint l_valueA, uint l_valueB) public {
+    s_calculated = _valueA ** _valueB;
   }
 
-  function Result() public view returns (uint c) {
-    return c;
+//view result
+  function Result() public view returns (uint s_calculated) {
+    return s_calculated;
   }
 }
