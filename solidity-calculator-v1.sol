@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.6.0 <0.9.0;
 
 contract Calculator {
@@ -5,7 +6,7 @@ contract Calculator {
 
 //add
   function add(uint _valueA, uint _valueB) public {
-    s_calculated = l_valueA + l_valueB;
+    s_calculated = _valueA + _valueB;
   }
 
 //subtract
@@ -14,17 +15,17 @@ contract Calculator {
   }
 
 //multiply
-  function multiply(uint l_valueA, uint l_valueB) public {
+  function multiply(uint _valueA, uint _valueB) public {
     s_calculated = _valueA * _valueB;
   }
 
 //divide
-  function divide(uint l_valueA, uint l_valueB) public {
+  function divide(uint _valueA, uint _valueB) public {
     s_calculated = _valueA / _valueB;
   }
 
 //exponent
-  function exp(uint l_valueA, uint l_valueB) public {
+  function exp(uint _valueA, uint _valueB) public {
     s_calculated = _valueA ** _valueB;
   }
 
