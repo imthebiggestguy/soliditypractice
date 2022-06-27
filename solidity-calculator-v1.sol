@@ -25,7 +25,7 @@ contract Calculator {
   }
 
 //exponent
-  function exp(uint _valueA, uint _valueB) public {
+  function exponent(uint _valueA, uint _valueB) public {
     s_calculated = _valueA ** _valueB;
   }
 
