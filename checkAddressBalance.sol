@@ -9,7 +9,7 @@ contract Viewer {
   }
   
   //function to return address
-  function returnAddress() public view returns (AddressOwner) {
+  function returnAddress() public view returns (address) {
     return address;
   }
   
