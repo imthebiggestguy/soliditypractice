@@ -30,7 +30,7 @@ contract Calculator {
   }
 
 //view result
-  function Result() public view returns (uint s_calculated) {
+  function calcResult() public view returns (uint) {
     return s_calculated;
   }
 }
